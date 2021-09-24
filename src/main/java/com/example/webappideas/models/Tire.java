@@ -3,8 +3,8 @@ package com.example.webappideas.models;
 import javax.persistence.*;
 
 @Entity
-@Table(name="racers")
-public class Racer {
+@Table(name="tires")
+public class Tire {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -48,10 +48,10 @@ public class Racer {
     @Column(nullable = false)
     private int air_handling;
 
-    public Racer() {
+    public Tire() {
     }
 
-    public Racer(long id, int weight, int acceleration, int on_road_traction, int off_road_traction, int mini_turbo, int ground_speed, int water_speed, int anti_g_speed, int air_speed, int ground_handling, int water_handling, int anti_g_handling, int air_handling) {
+    public Tire(long id, int weight, int acceleration, int on_road_traction, int off_road_traction, int mini_turbo, int ground_speed, int water_speed, int anti_g_speed, int air_speed, int ground_handling, int water_handling, int anti_g_handling, int air_handling) {
         this.id = id;
         this.weight = weight;
         this.acceleration = acceleration;
@@ -68,7 +68,7 @@ public class Racer {
         this.air_handling = air_handling;
     }
 
-    public Racer(int weight, int acceleration, int on_road_traction, int off_road_traction, int mini_turbo, int ground_speed, int water_speed, int anti_g_speed, int air_speed, int ground_handling, int water_handling, int anti_g_handling, int air_handling) {
+    public Tire(int weight, int acceleration, int on_road_traction, int off_road_traction, int mini_turbo, int ground_speed, int water_speed, int anti_g_speed, int air_speed, int ground_handling, int water_handling, int anti_g_handling, int air_handling) {
         this.weight = weight;
         this.acceleration = acceleration;
         this.on_road_traction = on_road_traction;
@@ -83,8 +83,6 @@ public class Racer {
         this.anti_g_handling = anti_g_handling;
         this.air_handling = air_handling;
     }
-
-
 
     public long getId() {
         return id;
