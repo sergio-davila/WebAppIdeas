@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--<html xmlns:th="http://www.thymeleaf.org"-->
+<!--      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"-->
+<!--      lang="en">-->
+<html xmlns:th="http://www.thymeleaf.org"
+      lang="en">
+<head th:replace="fragments/head :: head">
+    <meta charset="UTF-8">
+    <title>KartBuilder</title>
+</head>
+<body>
+
+<div id="dropdowns" class="row mt-3">
+  <div class="col-6">
+  <label for="karts">Kart Bodies:</label>
+    <select name="kartMenu" id="karts">
+      <option value="1">Standard Kart/300 SL Roadster/The Duke</option>
+      <option value="2">Pipe Frame/Varmint/City Tripper</option>
+      <option value="3">Mach 8/Sports Coupe/Inkstriker</option>
+      <option value="4">Steel Driver/Tri-Speeder/Bone Rattler</option>
+      <option value="5">Cat Cruiser/Comet/Yoshi Bike/Teddy Buggy</option>
+      <option value="6">Circuit Special/B-Dasher/P-Wing</option>
+      <option value="7">Badwagon/GLA/Standard ATV</option>
+      <option value="8">Prancer/Sport Bike/Jet Bike</option>
+      <option value="9">Biddybuggy/Mr Scooty</option>
+      <option value="10">Landship/Streetle</option>
+      <option value="11">Sneeker/Gold Standard/Master Cycle</option>
+      <option value="12">W 25 Silver Arrow/Standard Bike/Flame Rider/Wild Wiggler</option>
+      <option value="13">Blue Falcon/Splat Buggy</option>
+      <option value="14">Tanooki Kart/Koopa Clown/Master Cycle Zero</option>
+    </select>
+  </div>
+
+  <div class="col-6">
+    <label for="racers">Racers:</label>
+    <select name="racerMenu" id="racers">
+      <option value="1">Baby Peach/Baby Daisy</option>
+      <option value="2">Baby Rosalina/Lemmy</option>
+      <option value="3">Baby Mario/Baby Luigi/Dry Bones/Light Mii</option>
+      <option value="4">Toadette/Wendy/Isabelle</option>
+      <option value="5">Koopa Troopa/Lakitu/Bowser Jr.</option>
+      <option value="6">Toad/Shy Guy/Larry</option>
+      <option value="7">Cat Peach/Inkling Girl/Female Villager</option>
+      <option value="8">Peach/Daisy/Yoshi</option>
+      <option value="9">Tanooki Mario/Inkling Boy/Male Villager</option>
+      <option value="10">Mario/Ludwig/Medium Mii</option>
+      <option value="11">Luigi/Iggy</option>
+      <option value="12">Rosalina/King Boo/Link (both outfits)</option>
+      <option value="13">Metal Mario/Gold Mario/Pink Gold Peach</option>
+      <option value="14">Waluigi/Donkey Kong/Roy</option>
+      <option value="15">Wario/Dry Bowser</option>
+      <option value="16">Bowser/Morton/Heavy Mii</option>
+    </select>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-6">
+    <label for="tires">Tires</label>
+    <select name="tiresMenu" id="tires">
+      <option value="1">Standard/Blue Standard/GLA Tires</option>
+      <option value="2">Monster/Hot Monster/Ancient Tires</option>
+      <option value="3">Roller/Azure Roller</option>
+      <option value="4">Slim/Wood/Crimson Slim</option>
+      <option value="5">Slick/Cyber Slick</option>
+      <option value="6">Metal/Gold Tires</option>
+      <option value="7">Button/Leaf Tires</option>
+      <option value="8">Off-Road/Retro Off-Road/Triforce Tires</option>
+      <option value="9">Sponge/Cushion</option>
+    </select>
+  </div>
+
+  <div class="col-6">
+    <label for="gliders"></label>
+    <select name="gliderMenu" id="gliders">
+      <option value="1">Super Glider/Waddle Wing/Hylian Kite</option>
+      <option value="2">Cloud Glider/Parachute/Flower Glider/Paper Glider</option>
+      <option value="3">Wario Wing/Plane Glider/Gold Glider/Paraglider</option>
+      <option value="4">Peach Parasol/Parafoil/Bowser Kite/MKTV Parafoil</option>
+    </select>
+  </div>
+</div>
+
+</body>
+</html>
