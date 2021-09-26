@@ -26,7 +26,10 @@ public class KartBuilderController {
 
     @GetMapping("/")
     public String kartBuilder(Model model, @RequestParam(name = "racerMenu", required = false) String racer_id, @RequestParam(name = "kartMenu", required = false) String kart_id, @RequestParam(name = "tireMenu", required = false) String tire_id, @RequestParam(name = "gliderMenu", required = false) String glider_id) {
-
+        model.addAttribute("racers",racerDao.findAll());
+        model.addAttribute("kartBodies", kartDao.findAll());
+        model.addAttribute("tires", tireDao.findAll());
+        model.addAttribute("gliders", gliderDao.findAll());
 
 
 
