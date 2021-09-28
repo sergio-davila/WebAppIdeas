@@ -24,4 +24,8 @@ VALUES (0, 4, 3, 5, 5, 0, 0, 0, 0, 10, 10, 10, 10),
 TRUNCATE kart_bodies;
 
 INSERT INTO kart_bodies (weight, acceleration, on_road_attraction, off_road_traction, mini_turbo, ground_speed, water_speed, anti_g_speed, air_speed, ground_handling, water_handling, anti_g_handling, air_handling)
-VALUES (),
+VALUES (2, 4, 3, 3, 4, 3, 3, 3, 3, 3, 2, 3, 3),
+       (1, 6, , 4, 6, 1, 3, 1, 1, 5, 4, 4, 2),
+       (3, 3, , 4, 4, 3, 3, 5, 4, 2, 2, 4, 2),
+       (4, 1, , 3, 2, 4, 5, 2, 0, 1, 5, 1, 1),
+       (),
