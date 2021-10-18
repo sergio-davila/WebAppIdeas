@@ -55,4 +55,7 @@ VALUES (2, 4, 2, 5, 3, 2, 3, 2, 3, 3, 3, 3, 3),
 TRUNCATE gliders;
 
 INSERT INTO gliders (weight, acceleration, on_road_attraction, off_road_traction, mini_turbo, ground_speed, water_speed, anti_g_speed, air_speed, ground_handling, water_handling, anti_g_handling, air_handling)
-VALUES (),
+VALUES (1, 1, 1, 1, 1, 1, 1, 0, 2, 1, 0, 1, 1),
+       (0, 2, 1, 1, 2, 0, 1, 1, 1, 1, 0, 1, 2),
+       (2, 1, 2, 0, 1, 1, 0, 1, 2, 1, 1, 0, 1),
+       (1, 2, 2, 0, 2, 0, 0, 1, 1, 1, 1, 0, 2);
